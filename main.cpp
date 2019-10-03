@@ -13,34 +13,50 @@ public:
 
 //getter and setter for salary
     double getSalary() { return salary; }
+
     void setSalary(double salary);
 
     /* 1) create a getter and setter for each variable in the class*/
 
-    string getName() {return name;}
+    string getName() { return name; }
+
     void setName(string name);
 
-    string getID() {return id;}
+    string getID() { return id; }
+
     void setID(string id);
 
-    string getAddress() {return address;}
+    string getAddress() { return address; }
+
     void setAddress(string address);
 
-    string getDoB() {return DoB;}
+    string getDoB() { return DoB; }
+
     void setDoB(string DoB);
 
-    string getDegree() {return degree;}
+    string getDegree() { return degree; }
+
     void setDegree(string degree);
 
 
     //getter and setter for SSN
     double getSSN() { return SSN; }
+
     void setSSN(double SSN);
 
 private:
     double salary;
     double SSN;
 };
+
+//Constructor
+Faculty::Faculty(string nm, string ident, string add, string date, string deg) {
+    name = nm;
+    id = ident;
+    address = add;
+    DoB = date;
+    degree = deg;
+}
 
 void Faculty::setSalary(double s) {
     salary = s;
@@ -56,7 +72,7 @@ void Faculty::setID(string i) {
     id = i;
 }
 
-void Faculty::setAddress(string a){
+void Faculty::setAddress(string a) {
     address = a;
 }
 
@@ -67,8 +83,6 @@ void Faculty::setDoB(string d) {
 void Faculty::setDegree(string e) {
     degree = e;
 }
-
-
 
 
 int main() {
