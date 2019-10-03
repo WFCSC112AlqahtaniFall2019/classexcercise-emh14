@@ -4,6 +4,14 @@
 
 #include "Faculty.h"
 
+//General Constructor
+Faculty::Faculty(string nm, string ident, string add, string date, string deg) {
+    name = nm;
+    id = ident;
+    address = add;
+    DoB = date;
+    degree = deg;
+}
 void Faculty::setSalary(double s) {
     salary = s;
 }
