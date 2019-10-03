@@ -4,6 +4,7 @@ using namespace std;
 
 class Faculty {
 public:
+    Faculty();//default constructor
     string name;
     string id;
     string address;
@@ -66,6 +67,8 @@ void Faculty::setDoB(string d) {
 void Faculty::setDegree(string e) {
     degree = e;
 }
+
+
 
 
 int main() {
