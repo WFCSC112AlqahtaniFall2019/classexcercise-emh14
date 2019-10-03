@@ -16,6 +16,22 @@ public:
 
     /* 1) create a getter and setter for each variable in the class*/
 
+    string getName() {return name;}
+    void setName(string name);
+
+    string getID() {return id;}
+    void setID(string id);
+
+    string getAddress() {return address;}
+    void setAddress(string address);
+
+    string getDoB() {return DoB;}
+    void setDoB(string DoB);
+
+    string getDegree() {return degree;}
+    void setDegree(string degree);
+
+
     //getter and setter for SSN
     double getSSN() { return SSN; }
     void setSSN(double SSN);
